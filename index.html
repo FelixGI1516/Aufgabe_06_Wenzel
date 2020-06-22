@@ -22,10 +22,11 @@
 <script src="public/oldwebsites/src/point.js"></script>
 
 
-<nav class="navbar navbar-fixed-top navbar-expand-lg jumbotron text-center ">
+<nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark text-center ">
   <div class="container-fluid">
 
-    <ul class="navbar-nav">
+    <ul class="nav navbar-nav">
+      <a class="navbar-brand text-center" href="/#">GeoSoft1 Assignment 6</a>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
           <i class='fas fa-hamburger' style='font-size:36px'></i>
@@ -33,24 +34,26 @@
         <div class="dropdown-menu">
           <a class="dropdown-item" href="/#">Main Page</a>
           <a class="dropdown-item" href="/editor">Pointeditor</a>
-
         </div>
-        <a class="navbar-brand" href="/#">Mainpage GeoSoftware1 Assignment 6</a>
     </ul>
   </div>
 </nav>
 
-
+<br>
+<br>
+<br>
+<br>
 <div class="a" align="center">
   <h1>Mainpage GeoSoftware1 Assignment 5</h1>
 
   <div>
-    assignment: 05<br>
+    assignment: 06<br>
     course: Geosoftware I SoSe 2020 <br>
-    authors: Felix Wenzel <br> <br>
+    author: Felix Wenzel <br> <br>
 
     This page does so many things! I kind of lost the overview ;)<br>
-    Busstop-overview, a Mapdisplay, departures at the nearest busstops,
+    Busstop-overview, a Mapdisplay now with a heatmap to see where the most busstops are
+    (in the city centre who could have thought), departures at the nearest busstops,
     a link to your own MongoDB-JSON-editor where you can create, update and delete your favorite points.<br>
     You will get an overview of those Points right on this Page but should first create one with the editor.
 
@@ -64,9 +67,8 @@
     <textarea rows="3" cols="64" id="userPosition"></textarea><br>
     <button class="button" type="button" onclick="refresh()">use this Point</button>
     <br>
-    <br>
-    Oh well and all your favorites will be deleted if you end the server!
 
+    <br>
   </div>
 
   <br>
@@ -83,6 +85,9 @@
   </div>
 
   <br>
+  <div class="a" align="center">
+  <button class="button" type="button" onclick="mainMapInterface.addHeatLayer()"> add heatlayer</button>
+  </div>
 
   <div id="mainMap"></div>
 
@@ -122,10 +127,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js%22%3E"></script>
 <!--bootstrap script-->
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<!--siteLayout-->"
-  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
-
+<!--siteLayout-->
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src="node_modules/leaflet.heat/dist/leaflet-heat.js"></script>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="public/oldwebsites/src/tokens_TEMPLATE.js"></script>
 <script src="public/oldwebsites/src/script.js"></script>

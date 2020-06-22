@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Pointeditor GeoSoftware1 Assignment 5</title>
+    <title>Pointeditor GeoSoftware1 Assignment 6</title>
     <meta charset="utf-8">
     <!--Bootstrap-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -10,7 +10,7 @@
     <!--bootstrap script-->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!--siteLayout-->
-    <link rel="stylesheet" type="text/css" href="public/oldwebsites/src/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -29,10 +29,11 @@
 </head>
 <body onload="deleteText()">
 
-<nav class="navbar navbar-expand-sm jumbotron text-center">
+<nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark text-center ">
     <div class="container-fluid">
 
-        <ul class="navbar-nav">
+        <ul class="nav navbar-nav">
+            <a class="navbar-brand text-center" href="/#">GeoSoft1 Assignment 6</a>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                     <i class='fas fa-hamburger' style='font-size:36px'></i>
@@ -40,17 +41,18 @@
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="/#">Main Page</a>
                     <a class="dropdown-item" href="/editor">Pointeditor</a>
-
                 </div>
-                <a class="navbar-brand" href="/#">Mainpage GeoSoftware1 Assignment 6</a>
         </ul>
     </div>
 </nav>
-
+<br>
+<br>
+<br>
+<br>
 <div class="a" align="center">
-    assignment: 05<br>
+    assignment: 06<br>
     course: Geosoftware I SoSe 2020 <br>
-    authors: Felix Wenzel <br> <br>
+    author: Felix Wenzel <br> <br>
 
     Pointeditor<hr>
     <a href="/">Back to mainpage</a> <br>
@@ -65,18 +67,18 @@
 
     current geojson: <br>
     <textarea rows="3" cols="64" id="userPosition" onchange="onChange()"></textarea><br>
-    <button onclick="sendFiles()">Send data</button>         <!-- läuft-->
-    <button onclick="deleteFiles()">Delete this file</button>    <!-- läuft nicht-->
-    <button onclick="updateFiles()">Update this file</button>    <!-- läuft nicht-->
+    <button onclick="sendFiles()">Send data</button>
+    <button onclick="deleteFiles()">Delete this file</button>
+    <button onclick="updateFiles()">Update this file</button>
     <button class="button" type="button" onclick="DocumentInterface.getLocation()">My geolocation</button>
     <hr>
     <p>With this function a point can be drawn on the map and as result the corresponding GeoJson is displayed above.</p>
     <div id="map" style="width: 600px; height: 400px; float: left;"></div>
     <div id="data">
-
     </div>
 </div>
-<div class="jumbotron text-center" align="center">
+<br>
+<div class="a" align="center">
     <h2>Impressum</h2>
     <div class="row">
         <div class="col-sm-4">
